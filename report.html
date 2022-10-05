@@ -1,0 +1,736 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>Report</title>
+  <script type='text/javascript' src='https://code.jquery.com/jquery-2.1.0.js'></script>
+
+  <script type='text/javascript' src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+  <link href="https://www.betterscan.io/assets/css/reportstyle.css" rel="stylesheet">
+
+
+
+
+
+<script type='text/javascript'>//<![CDATA[
+$(window).load(function(){
+var data =
+[
+    {
+        "hash": "58dcd67d7e5553cd0796570c1c6c1fe4",
+        "description": "Highentropy",
+        "file": "config/dependency-check/project-suppression.xml",
+        "line": 77
+    },
+    {
+        "hash": "6d261d2fdeb54f82678a9c202003b5c5",
+        "description": "GenericAPIKey",
+        "file": ".github/workflows/build.yml",
+        "line": 72
+    },
+    {
+        "hash": "a10a6f7b08a369af66dfc0cf2c373fb1",
+        "description": "User controlled data in eval() or similar functions may result in Server Side Injection or Remote Code Injection",
+        "file": "src/main/resources/webgoat/static/js/jquery/jquery-1.10.2.min.js",
+        "line": 4
+    },
+    {
+        "hash": "73e3620ba1ea7430a725bcfb7113b369",
+        "description": "Error messages with stack traces may expose sensitive information about the application.",
+        "file": "src/main/resources/webgoat/static/js/libs/ace.js",
+        "line": 55
+    },
+    {
+        "hash": "204bced0ba88e19d2c050af9dfb34b28",
+        "description": "String comparisons using '===', '!==', '!=' and '==' is vulnerable to timing attacks. More info: https://snyk.io/blog/node-js-timing-attack-ccc-ctf/",
+        "file": "src/main/resources/webgoat/static/js/libs/ace.js",
+        "line": 9837
+    },
+    {
+        "hash": "df0b5a5174787f292d7ae5087c288050",
+        "description": "The use of a predictable random value can lead to vulnerabilities when\nused in certain security critical contexts. A quick fix could be to replace\nthe use of java.util.Random with something stronger, such as java.security.SecureRandom.\n",
+        "file": "src/main/java/org/owasp/webgoat/lessons/hijacksession/cas/HijackSessionAuthenticationProvider.java",
+        "line": 51
+    },
+    {
+        "hash": "053552956aac026f361a12f05fa88d33",
+        "description": "DES is considered strong ciphers for modern applications. Currently, NIST recommends the usage\nof AES block ciphers instead of DES.\n",
+        "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/HashingAssignment.java",
+        "line": 56
+    },
+    {
+        "hash": "cfc485109190747b2e7f8c6bce8bc9a7",
+        "description": "Cryptographic keys should not be kept in the source code. The source code can be widely shared\nin an enterprise environment, and is certainly shared in open source. To be managed safely,\npasswords and secret keys should be stored in separate configuration files or keystores.\n",
+        "file": "src/it/java/org/owasp/webgoat/CSRFIntegrationTest.java",
+        "line": 46
+    },
+    {
+        "hash": "ef3273864c2a0ec32003ca62711a6174",
+        "description": "A trust boundary can be thought of as line drawn through a program. On one side\nof the line, data is untrusted. On the other side of the line, data is assumed\nto be trustworthy. The purpose of validation logic is to allow data to safely\ncross the trust boundary - to move from untrusted to trusted. A trust boundary\nviolation occurs when a program blurs the line between what is trusted and what\nis untrusted. By combining trusted and untrusted data in the same data\nstructure, it becomes easier for programmers to mistakenly trust unvalidated\ndata.\n",
+        "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/EncodingAssignment.java",
+        "line": 54
+    },
+    {
+        "hash": "54eaab10cd9229287a8a2e26ea01e819",
+        "description": "Cryptographic keys should not be kept in the source code. The source code can be widely shared\nin an enterprise environment, and is certainly shared in open source. To be managed safely,\npasswords and secret keys should be stored in separate configuration files or keystores.\n",
+        "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/CryptoUtil.java",
+        "line": 130
+    },
+    {
+        "hash": "eeebacf9e1e045bbdfa4f6ac737d3ef6",
+        "description": "Cryptographic keys should not be kept in the source code. The source code can be widely shared\nin an enterprise environment, and is certainly shared in open source. To be managed safely,\npasswords and secret keys should be stored in separate configuration files or keystores.\n",
+        "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/HashingAssignment.java",
+        "line": 89
+    },
+    {
+        "hash": "9cf8d60a10437213540f66b626786bc3",
+        "description": "The method identified is susceptible to injection. The input should be validated and properly\nescaped.\n",
+        "file": "src/main/java/org/owasp/webgoat/container/users/UserService.java",
+        "line": 52
+    },
+    {
+        "hash": "a67dd7ddb221e826278ebeaf3aaf8055",
+        "description": "\"The software uses an HTTP request parameter to construct a pathname that should be within a\nrestricted directory, but it does not properly neutralize absolute path sequences such as\n\"/abs/path\" that can resolve to a location that is outside of that directory. See\nhttp://cwe.mitre.org/data/definitions/36.html for more information.\"\n",
+        "file": "src/main/java/org/owasp/webgoat/lessons/pathtraversal/ProfileUploadRetrieval.java",
+        "line": 86
+    },
+    {
+        "hash": "b8796de0aa7fb74df49fd625b277a5fe",
+        "description": "Server-Side Request Forgery occur when a web server executes a request to a\nuser supplied destination parameter that is not validated. Such vulnerabilities\ncould allow an attacker to access internal services or to launch attacks from\nyour web server.\n",
+        "file": "src/main/java/org/owasp/webgoat/lessons/ssrf/SSRFTask2.java",
+        "line": 53
+    },
+    {
+        "hash": "dca80775e4778be47819328135eb691e",
+        "description": "Passwords should not be kept in the source code. The source code can be widely shared in an\nenterprise environment, and is certainly shared in open source. To be managed safely, passwords\nand secret keys should be stored in separate configuration files or keystores.\n",
+        "file": ".mvn/wrapper/MavenWrapperDownloader.java",
+        "line": 100
+    },
+    {
+        "hash": "c61ad412f0b229a3d9755b8e9728c6eb",
+        "description": "\"Storing sensitive data in a persistent cookie for an extended period can lead to a breach of\nconfidentiality or account compromise.\"\n",
+        "file": "src/main/java/org/owasp/webgoat/lessons/jwt/JWTVotesEndpoint.java",
+        "line": 105
+    },
+    {
+        "hash": "3a122edbba55f8a94f7df4dbe0e724be",
+        "description": "The Servlet can read GET and POST parameters from various methods. The value obtained should be\nconsidered unsafe. You may need to validate or sanitize those values before passing them to\nsensitive APIs\n",
+        "file": "src/main/java/org/owasp/webgoat/lessons/authbypass/VerifyAccount.java",
+        "line": 85
+    },
+    {
+        "hash": "5029fef9c2349277a1c9dbccf9803411",
+        "description": "Cryptographic keys should not be kept in the source code. The source code can be widely shared\nin an enterprise environment, and is certainly shared in open source. To be managed safely,\npasswords and secret keys should be stored in separate configuration files or keystores.\n",
+        "file": "src/main/java/org/owasp/webgoat/container/service/LabelDebugService.java",
+        "line": 57
+    },
+    {
+        "hash": "808150c5c86c9ea673b50a712f0c5948",
+        "description": "The sensitive information may be valuable information on its own (such as a password), or it\nmay be useful for launching other, more deadly attacks. If an attack fails, an attacker may use\nerror information provided by the server to launch another more focused attack. For example, an\nattempt to exploit a path traversal weakness (CWE-22) might yield the full pathname of the\ninstalled application.\n",
+        "file": ".mvn/wrapper/MavenWrapperDownloader.java",
+        "line": 90
+    },
+    {
+        "hash": "6a33d75cded7b178f7802c569d9412c6",
+        "description": "The method identified is susceptible to injection. The input should be validated and properly\nescaped.\n",
+        "file": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson10.java",
+        "line": 58
+    },
+    {
+        "hash": "74b1e349eaa346e9269ac14ecc92fcad",
+        "description": "RegExp() called with a variable, this might allow an attacker to DOS your application with a long-running regular expression.\n",
+        "file": "src/main/resources/webgoat/static/js/libs/ace.js",
+        "line": 4491
+    },
+    {
+        "hash": "4820d896a41a056f74ca65a9d925b309",
+        "description": "Detected eval(variable), which could allow a malicious actor to run arbitrary code.\n",
+        "file": "src/main/resources/webgoat/static/js/libs/require.min.js",
+        "line": 5
+    },
+    {
+        "hash": "74dcd3888939d1c9ef8898b48f180a72",
+        "description": "Detected the use of require(variable). Calling require with a non-literal argument might\nallow an attacker to load an run arbitrary code, or access arbitrary files.\n",
+        "file": "src/main/resources/webgoat/static/js/libs/ace.js",
+        "line": 4521
+    },
+    {
+        "hash": "8d163be3a1f026e97287e1100a0d14ca",
+        "description": "Bracket object notation with user input is present, this might allow an attacker to access all properties of the object and even it's prototype, leading to possible code execution.",
+        "file": "src/main/resources/lessons/challenges/js/bootstrap.min.js",
+        "line": 6
+    },
+    {
+        "hash": "ba9fe60d6ccb2f44cca12aaabcfb5397",
+        "description": "Unnecessary import from the current package 'org.owasp.webgoat.lessons.missingac.MissingFunctionAC'",
+        "file": "src/test/java/org/owasp/webgoat/lessons/missingac/MissingFunctionACUsersTest.java",
+        "line": 29
+    },
+    {
+        "hash": "c660f75ff818c4a6b41f8ad21c243112",
+        "description": "Use equals() to compare strings instead of '==' or '!='",
+        "file": "src/main/java/org/owasp/webgoat/lessons/csrf/ForgedReviews.java",
+        "line": 102
+    },
+    {
+        "hash": "e33a95c39a71154812d2614cf7f5c6aa",
+        "description": "Unnecessary modifier 'public' on method 'getId': the method is declared in an interface type",
+        "file": "src/main/java/org/owasp/webgoat/lessons/vulnerablecomponents/Contact.java",
+        "line": 27
+    },
+    {
+        "hash": "4161b1fa79e7fbdc2e28ba1c96acbee9",
+        "description": "Unnecessary import from the current package 'org.owasp.webgoat.lessons.xss.CrossSiteScripting'",
+        "file": "src/test/java/org/owasp/webgoat/lessons/xss/DOMCrossSiteScriptingTest.java",
+        "line": 31
+    },
+    {
+        "hash": "cc075eed0e1dc3ffbe6b621f83da93e9",
+        "description": "Unnecessary import from the current package 'org.owasp.webgoat.lessons.missingac.User'",
+        "file": "src/test/java/org/owasp/webgoat/lessons/missingac/DisplayUserTest.java",
+        "line": 30
+    },
+    {
+        "hash": "c5427998a2acec2bed19b4c2bc780bd0",
+        "description": "Avoid empty if statements",
+        "file": "src/main/java/org/owasp/webgoat/lessons/idor/UserProfile.java",
+        "line": 62
+    },
+    {
+        "hash": "f6a8c89965770619c90a9ed2e78e303e",
+        "description": "The local variable name 'answer_pwd' doesn't match '[a-z][a-zA-Z0-9]*'",
+        "file": "src/it/java/org/owasp/webgoat/CryptoIntegrationTest.java",
+        "line": 60
+    },
+    {
+        "hash": "bc26ac0d9e1faa661174f56e66f3490d",
+        "description": "'catch' branch identical to 'InvalidClassException' branch",
+        "file": "src/main/java/org/owasp/webgoat/lessons/deserialization/InsecureDeserializationTask.java",
+        "line": 68
+    },
+    {
+        "hash": "b0b3b16e1a793aa75c2eba7a09af1d9b",
+        "description": "Unused import 'org.hamcrest.Matchers.hasSize'",
+        "file": "src/test/java/org/owasp/webgoat/lessons/missingac/MissingFunctionACUsersTest.java",
+        "line": 34
+    },
+    {
+        "hash": "5ea7998795465e84984bccebd1e2072e",
+        "description": "When doing a String.toLowerCase()/toUpperCase() call, use a Locale",
+        "file": "src/it/java/org/owasp/webgoat/DeserializationIntegrationTest.java",
+        "line": 13
+    },
+    {
+        "hash": "c4cb5ecc8c84ad8307364fd8e459b4cc",
+        "description": "Avoid empty catch blocks",
+        "file": ".mvn/wrapper/MavenWrapperDownloader.java",
+        "line": 71
+    },
+    {
+        "hash": "83bb49db6c23233ac79dcfe161fb9f0d",
+        "description": "A class which only has private constructors should be final",
+        "file": "src/main/java/org/owasp/webgoat/lessons/jwt/JWTFinalEndpoint.java",
+        "line": 63
+    },
+    {
+        "hash": "e1274377d5734d1b8dc34b87682e21ee",
+        "description": "Unused import 'org.springframework.core.io.support.ResourcePatternResolver'",
+        "file": "src/test/java/org/owasp/webgoat/container/assignments/AssignmentEndpointTest.java",
+        "line": 37
+    },
+    {
+        "hash": "f98c07571849479a02d12288afd571d4",
+        "description": "Unnecessary import from the current package 'org.owasp.webgoat.lessons.passwordreset.PasswordReset'",
+        "file": "src/test/java/org/owasp/webgoat/lessons/passwordreset/SecurityQuestionAssignmentTest.java",
+        "line": 8
+    },
+    {
+        "hash": "14786371dda22037d489fcd727293aff",
+        "description": "Unused import 'org.owasp.webgoat.container.lessons.Initializeable'",
+        "file": "src/test/java/org/owasp/webgoat/container/users/UserServiceTest.java",
+        "line": 9
+    },
+    {
+        "hash": "84ee84848891c54d96b1232a669c1584",
+        "description": "Unnecessary import from the current package 'org.owasp.webgoat.lessons.hijacksession.cas.Authentication'",
+        "file": "src/test/java/org/owasp/webgoat/lessons/hijacksession/cas/HijackSessionAuthenticationProviderTest.java",
+        "line": 38
+    },
+    {
+        "hash": "6e2e5a94d93c22934ac69cbf9352b478",
+        "description": "All methods are static.  Consider using a utility class instead. Alternatively, you could add a private constructor or make the class abstract to silence this warning.",
+        "file": ".mvn/wrapper/MavenWrapperDownloader.java",
+        "line": 21
+    },
+    {
+        "hash": "c25acb5f1ee441be73405ac285435755",
+        "description": "Avoid using implementation types like 'TreeMap'; use the interface instead",
+        "file": "src/main/java/org/owasp/webgoat/webwolf/jwt/JWTToken.java",
+        "line": 50
+    },
+    {
+        "hash": "1d820af9ee0ded09f4a85b8314d7454d",
+        "description": "Unnecessary use of fully qualified name 'java.util.Map' due to existing import 'java.util.Map'",
+        "file": "src/main/java/org/owasp/webgoat/lessons/clientsidefiltering/Salaries.java",
+        "line": 81
+    },
+    {
+        "hash": "4ac6e219858968353bc9a38824e5da9d",
+        "description": "Unnecessary use of fully qualified name 'WireMock.urlMatching' due to existing static import 'com.github.tomakehurst.wiremock.client.WireMock.urlMatching'",
+        "file": "src/test/java/org/owasp/webgoat/lessons/xxe/BlindSendFileAssignmentTest.java",
+        "line": 95
+    },
+    {
+        "hash": "6747fbcd11f519ab0ba8915b1e6d1c21",
+        "description": "Avoid unnecessary if..then..else statements when returning booleans",
+        "file": "src/main/java/org/owasp/webgoat/lessons/authbypass/AccountVerificationHelper.java",
+        "line": 79
+    },
+    {
+        "hash": "278bd108dde1b364558ec86e28fca917",
+        "description": "Consider simply returning the value vs storing it in local variable 'link'",
+        "file": "src/it/java/org/owasp/webgoat/PasswordResetLessonIntegrationTest.java",
+        "line": 104
+    },
+    {
+        "hash": "2c620e229958a7e336d1fc73f75ee4e8",
+        "description": "The JUnit 5 test method name 'SmithIsMostEarningCompletesAssignment' doesn't match '[a-z][a-zA-Z0-9]*'",
+        "file": "src/test/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson9Test.java",
+        "line": 169
+    },
+    {
+        "hash": "e3054d3eff62522c97550fd5419cec52",
+        "description": "The method parameter name 'question_2_solution' doesn't match '[a-z][a-zA-Z0-9]*'",
+        "file": "src/main/java/org/owasp/webgoat/lessons/cia/CIAQuiz.java",
+        "line": 19
+    },
+    {
+        "hash": "0db4a73482a1897eeb4da2aaa148d3ee",
+        "description": "Unnecessary import from the current package 'org.owasp.webgoat.lessons.jwt.JWT'",
+        "file": "src/test/java/org/owasp/webgoat/lessons/jwt/JWTDecodeEndpointTest.java",
+        "line": 7
+    },
+    {
+        "hash": "1777ccf466a4c669f3fe1b8ed77073f2",
+        "description": "Avoid unused private fields such as 'mockMvc'.",
+        "file": "src/test/java/org/owasp/webgoat/lessons/authbypass/BypassVerificationTest.java",
+        "line": 41
+    },
+    {
+        "hash": "1ac6d6b82fb8f6a35a55ec9aa2ffa32a",
+        "description": "Unnecessary import from the current package 'org.owasp.webgoat.lessons.jwt.JWTFinalEndpoint'",
+        "file": "src/test/java/org/owasp/webgoat/lessons/jwt/JWTFinalEndpointTest.java",
+        "line": 10
+    },
+    {
+        "hash": "b3c8eec41a93f68212cc0f584dfde03f",
+        "description": "Unnecessary import from the current package 'org.owasp.webgoat.lessons.challenges.SolutionConstants'",
+        "file": "src/test/java/org/owasp/webgoat/lessons/challenges/Assignment1Test.java",
+        "line": 32
+    },
+    {
+        "hash": "6c1750c1eb568c9a2d5125e6db7f1798",
+        "description": "The method parameter name 'answer_user' doesn't match '[a-z][a-zA-Z0-9]*'",
+        "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/EncodingAssignment.java",
+        "line": 61
+    },
+    {
+        "hash": "700a55b3c4cc6c20eabc1acd3d4d260c",
+        "description": "Unused import 'org.jose4j.jwx.CompactSerializer.serialize'",
+        "file": "src/main/java/org/owasp/webgoat/webwolf/jwt/JWTToken.java",
+        "line": 22
+    },
+    {
+        "hash": "847c6562730858d1a02566193e151f7f",
+        "description": "The method parameter name 'QTY' doesn't match '[a-z][a-zA-Z0-9]*'",
+        "file": "src/main/java/org/owasp/webgoat/lessons/htmltampering/HtmlTamperingTask.java",
+        "line": 39
+    },
+    {
+        "hash": "1f2945acb09426fad2ce574ae321b651",
+        "description": "Consider simply returning the value vs storing it in local variable 'localeResolver'",
+        "file": "src/main/java/org/owasp/webgoat/container/MvcConfiguration.java",
+        "line": 204
+    },
+    {
+        "hash": "3684f02fc3c89d6830643977fdec18d3",
+        "description": "The method parameter name 'question_4_solution' doesn't match '[a-z][a-zA-Z0-9]*'",
+        "file": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/advanced/SqlInjectionQuiz.java",
+        "line": 49
+    },
+    {
+        "hash": "afae5768e8473ca1445d1d02c317b03b",
+        "description": "Unused import 'com.google.common.collect.Lists'",
+        "file": "src/main/java/org/owasp/webgoat/webwolf/requests/WebWolfTraceRepository.java",
+        "line": 26
+    },
+    {
+        "hash": "7748e771e5ea1bdbe70ecb4b5263b653",
+        "description": "Unused import 'org.springframework.web.bind.annotation.*'",
+        "file": "src/main/java/org/owasp/webgoat/lessons/insecurelogin/InsecureLoginTask.java",
+        "line": 28
+    },
+    {
+        "hash": "2d08bb3a5f2743353ed140bce4ff1888",
+        "description": "Please use StandardCharsets constants",
+        "file": "src/it/java/org/owasp/webgoat/CryptoIntegrationTest.java",
+        "line": 125
+    },
+    {
+        "hash": "e84f22a06c392137416be13a44225f8e",
+        "description": "Avoid unused local variables such as 'result'.",
+        "file": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10b.java",
+        "line": 101
+    },
+    {
+        "hash": "0c422e39c6c9eb6eba9f0bd99bf979d4",
+        "description": "Perhaps 'decodeBuffer' could be replaced by a local variable.",
+        "file": "src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/MD5.java",
+        "line": 423
+    },
+    {
+        "hash": "5674a11e77c70e2db0de114a39ff267d",
+        "description": "Unnecessary use of fully qualified name 'ResultSet.CONCUR_UPDATABLE' due to existing static import 'java.sql.ResultSet.CONCUR_UPDATABLE'",
+        "file": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson8.java",
+        "line": 64
+    },
+    {
+        "hash": "ddef42d549a7e3e4d3597a165d2a3f93",
+        "description": "Ensure that resources like this FileOutputStream object are closed after use",
+        "file": ".mvn/wrapper/MavenWrapperDownloader.java",
+        "line": 111
+    },
+    {
+        "hash": "13aa1394c7e255f6074c9126aba67943",
+        "description": "Unnecessary import from the current package 'org.owasp.webgoat.lessons.hijacksession.cas.HijackSessionAuthenticationProvider'",
+        "file": "src/test/java/org/owasp/webgoat/lessons/hijacksession/cas/HijackSessionAuthenticationProviderTest.java",
+        "line": 40
+    },
+    {
+        "hash": "cd1291bb25d2edb725d05107b251c32d",
+        "description": "The static method name 'II' doesn't match '[a-z][a-zA-Z0-9]*'",
+        "file": "src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/MD5.java",
+        "line": 560
+    },
+    {
+        "hash": "0def5155f35732ee207bb4f4b022009b",
+        "description": "Do not hard code the IP address ",
+        "file": "src/it/java/org/owasp/webgoat/SqlInjectionMitigationIntegrationTest.java",
+        "line": 65
+    },
+    {
+        "hash": "26f769ceba9ac2556f292c2a8c207696",
+        "description": "Consider simply returning the value vs storing it in local variable 'diagnostics'",
+        "file": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10b.java",
+        "line": 103
+    },
+    {
+        "hash": "f945459f8a60bd002d0c788fa4faec9b",
+        "description": "Ensure that resources like this PreparedStatement object are closed after use",
+        "file": "src/main/java/org/owasp/webgoat/lessons/challenges/challenge5/Assignment5.java",
+        "line": 59
+    },
+    {
+        "hash": "e9ae65aae3e3b321a64f492dd408c26a",
+        "description": "Unnecessary use of fully qualified name 'CompactSerializer.serialize' due to existing static import 'org.jose4j.jwx.CompactSerializer.serialize'",
+        "file": "src/main/java/org/owasp/webgoat/webwolf/jwt/JWTToken.java",
+        "line": 83
+    },
+    {
+        "hash": "874eeb9553247dc389f3b6e8f5a8fb33",
+        "description": "Unused import 'lombok.*'",
+        "file": "src/main/java/org/owasp/webgoat/container/lessons/Assignment.java",
+        "line": 3
+    },
+    {
+        "hash": "843d09312f4b436a27368f07972f4166",
+        "description": "The static method name 'GG' doesn't match '[a-z][a-zA-Z0-9]*'",
+        "file": "src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/MD5.java",
+        "line": 542
+    },
+    {
+        "hash": "1fad8795c818f8ec2b4bf19fc169c72d",
+        "description": "Unnecessary modifier 'public' on method 'getEmail': the method is declared in an interface type",
+        "file": "src/main/java/org/owasp/webgoat/lessons/vulnerablecomponents/Contact.java",
+        "line": 33
+    },
+    {
+        "hash": "310b53091f892660b8dfe3e3c274df1d",
+        "description": "The JUnit 5 test method name 'HiddenMenusFailure' doesn't match '[a-z][a-zA-Z0-9]*'",
+        "file": "src/test/java/org/owasp/webgoat/lessons/missingac/MissingFunctionACHiddenMenusTest.java",
+        "line": 69
+    },
+    {
+        "hash": "93ad7d005b1d8b69b30b1bcfe079f245",
+        "description": "Ensure that resources like this ReadableByteChannel object are closed after use",
+        "file": ".mvn/wrapper/MavenWrapperDownloader.java",
+        "line": 109
+    },
+    {
+        "hash": "d5d470b3a5b027984518272eb27f6a3b",
+        "description": "Unused import 'java.util.stream.Collectors.toList'",
+        "file": "src/main/java/org/owasp/webgoat/container/lessons/CourseConfiguration.java",
+        "line": 44
+    },
+    {
+        "hash": "14e61be9e9a34d90b292fe432863fcf1",
+        "description": "Document empty constructor",
+        "file": "src/main/java/org/owasp/webgoat/container/session/UserSessionData.java",
+        "line": 12
+    },
+    {
+        "hash": "985b6cefe29b4aa1c1f1c226e8d4686b",
+        "description": "Unused import 'io.jsonwebtoken.*'",
+        "file": "src/main/java/org/owasp/webgoat/lessons/jwt/JWTFinalEndpoint.java",
+        "line": 25
+    },
+    {
+        "hash": "6e2a6c311c74a2dbe5c5ea6946c0a0fe",
+        "description": "Assertion may be simplified using assertTrue",
+        "file": "src/it/java/org/owasp/webgoat/CSRFIntegrationTest.java",
+        "line": 152
+    },
+    {
+        "hash": "deb8dd92794bd78363e4d830402bfc76",
+        "description": "Substitute calls to size() == 0 (or size() != 0, size() > 0, size() < 1) with calls to isEmpty()",
+        "file": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10b.java",
+        "line": 78
+    },
+    {
+        "hash": "bc74819638f7b728360c5bbd1aecaf0c",
+        "description": "Unused import 'org.springframework.web.servlet.i18n.SessionLocaleResolver'",
+        "file": "src/main/java/org/owasp/webgoat/container/WebSecurityConfig.java",
+        "line": 47
+    },
+    {
+        "hash": "71c5eda7a6bc033c48f16c495b0bbe92",
+        "description": "Return an empty collection rather than null.",
+        "file": "src/main/java/org/owasp/webgoat/lessons/jwt/JWTFinalEndpoint.java",
+        "line": 91
+    },
+    {
+        "hash": "e9c402f1d5b1b7d98cd544e76b6eff6f",
+        "description": "Ensure that resources like this StandardJavaFileManager object are closed after use",
+        "file": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/mitigation/SqlInjectionLesson10b.java",
+        "line": 97
+    },
+    {
+        "hash": "67e0b06c49db647d4145ca34041d22bd",
+        "description": "Avoid using a branching statement as the last in a loop.",
+        "file": "src/it/java/org/owasp/webgoat/JWTLessonIntegrationTest.java",
+        "line": 74
+    },
+    {
+        "hash": "93e6b062d66dbc6fcf0fb3e4304d6b2b",
+        "description": "Use one line for each declaration, it enhances code readability.",
+        "file": "src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/MD5.java",
+        "line": 584
+    },
+    {
+        "hash": "5eac92b16d4dbfe6e13546395057db9d",
+        "description": "The local variable name 'NUMBER_OF_PARALLEL_THREADS' doesn't match '[a-z][a-zA-Z0-9]*'",
+        "file": "src/it/java/org/owasp/webgoat/ProgressRaceConditionIntegrationTest.java",
+        "line": 23
+    },
+    {
+        "hash": "5d6a70cff6ebdf32c1de68d433c10ddc",
+        "description": "The static method name 'HH' doesn't match '[a-z][a-zA-Z0-9]*'",
+        "file": "src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/MD5.java",
+        "line": 551
+    },
+    {
+        "hash": "f86589b933c913fddfff11acf3cc2f59",
+        "description": "Avoid unused local variables such as 'test'.",
+        "file": "src/main/java/org/owasp/webgoat/lessons/sqlinjection/introduction/SqlInjectionLesson9.java",
+        "line": 67
+    },
+    {
+        "hash": "c8255f8ab823c32fa9b1179ce2e07e02",
+        "description": "The method parameter name 'DOMTestRoute' doesn't match '[a-z][a-zA-Z0-9]*'",
+        "file": "src/main/java/org/owasp/webgoat/lessons/xss/CrossSiteScriptingLesson6a.java",
+        "line": 45
+    },
+    {
+        "hash": "7557965ab05a2a404e46a29da5c13f28",
+        "description": "Avoid unused private fields such as 'id'.",
+        "file": "src/main/java/org/owasp/webgoat/container/users/LessonTracker.java",
+        "line": 48
+    },
+    {
+        "hash": "a0e70a30690a7ddb875fe080d887f7a8",
+        "description": "Avoid unused local variables such as 'jwt'.",
+        "file": "src/it/java/org/owasp/webgoat/JWTLessonIntegrationTest.java",
+        "line": 70
+    },
+    {
+        "hash": "237e49ebf2cc3c4d37183ef86527b0c2",
+        "description": "Position literals first in String comparisons",
+        "file": "src/main/java/org/owasp/webgoat/container/AsciiDoctorTemplateResolver.java",
+        "line": 112
+    },
+    {
+        "hash": "6736aff5aa7202ab47ac51ce20d8c79f",
+        "description": "The static method name 'FF' doesn't match '[a-z][a-zA-Z0-9]*'",
+        "file": "src/main/java/org/owasp/webgoat/lessons/challenges/challenge7/MD5.java",
+        "line": 533
+    },
+    {
+        "hash": "9a3e13f10714cd530b232c247a6e0b38",
+        "description": "Ensure that HEALTHCHECK instructions have been added to container images",
+        "file": "Dockerfile",
+        "line": 1
+    },
+    {
+        "hash": "e0d9a97be2a8067679e6f81d6521df6b",
+        "description": "Private Key",
+        "file": "src/main/java/org/owasp/webgoat/lessons/cryptography/CryptoUtil.java",
+        "line": 42
+    }
+]
+var sort_by = function(field, reverse, primer){
+
+   var key = primer ?
+       function(x) {return primer(x[field])} :
+       function(x) {return x[field]};
+
+   reverse = !reverse ? 1 : -1;
+
+   return function (a, b) {
+       return a = key(a), b = key(b), reverse * ((a > b) - (b > a));
+     }
+}
+
+for(var i = 0; i < data.length; i++) {
+
+    if(data[i].risk=="Information")
+    {
+        data[i].risk_no=1;
+    }
+
+    if(data[i].risk=="Low")
+    {
+        data[i].risk_no=2;
+    }
+
+    if(data[i].risk=="Medium")
+    {
+        data[i].risk_no=3;
+    }
+
+    if(data[i].risk=="High")
+    {
+        data[i].risk_no=4;
+    }
+
+
+
+
+
+}
+
+data.sort(sort_by('risk_no', true, parseInt));
+
+
+
+for(var i = 0; i < data.length; i++) {
+$('#findings').append("<tbody><tr><th>Hash</th><td>"+data[i].hash+"</td></tr>");
+$('#findings').append("<tr><th>Description</th><td>"+data[i].description+"</td></tr></tbody></table>");
+$('#hr').append("<hr>");
+
+}
+
+
+});//]]>
+
+</script>
+
+
+</head>
+
+ <div class="container-fluid">
+
+
+
+
+<p style="margin-bottom: 25px;"><img src="https://www.betterscan.io/wp-content/uploads/2022/05/logo-nobackground-164x32-1.png" style="position:relative; top:-40px;"></p>
+
+<div class="tabbable tabs-left">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#overview" data-toggle="tab">Summary</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane fade in active" id="overview">
+
+
+<div class="alert alert-info">
+    <b>Tags</b>:
+
+        Security Final Report
+
+
+</div>
+
+<section id="information">
+    <div class="box">
+        <h4>Report</h4>
+        <div class="box-content" style="padding: 0;">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th style="border-top: 0;">Type</th>
+
+                         <td style="border-top: 0;">FILE</td>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+
+
+</section>
+<hr>
+
+    <section id="file">
+    <h4>File Details</h4>
+    <div class="box">
+        <div class="box-content" style="padding: 0;">
+            <table class="table">
+                <tbody><tr>
+                    <th style="border-top: 0;">File Name</th>
+                    <td style="border-top: 0;">report.html</td>
+                </tr>
+                <tr>
+                    <th>File Type</th>
+                    <td>data</td>
+                </tr>
+            </tbody></table>
+        </div>
+    </div>
+</section>
+
+
+
+  <div align="center"><h1>Scan Report</h1></div>
+
+
+<hr>
+  <h4>Code</h4>
+
+ <section id="findings1">
+    <div class="box">
+
+        <div id="findings" class="box-content" style="padding: 0;">
+        </div>
+    </div>
+</section>
+
+</div>
+
+</body>
+
+
+</html>
+
+
